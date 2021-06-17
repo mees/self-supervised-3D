@@ -3,7 +3,10 @@
 
 Code for deploying the self-supervised single-image 3D shape model from the paper "Self-supervised 3D Shape and Viewpoint Estimation from Single Images for Robotics" (IROS 2019).
 Concretely, we showcase how using the hallucinated 3D object shapes improve the performance on the task of grasping real-world objects with a PR2 robot.
+<center>
+
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/oQgHG9JdMP4/0.jpg)](https://www.youtube.com/watch?v=oQgHG9JdMP4 "Video Title")
+</center>
 
 ## Reference
 If you find the code helpful please consider citing our work
