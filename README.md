@@ -20,6 +20,7 @@ If you find the code helpful please consider citing our work
   - Follow the instructions to install [mask-rcnn](seg_every_thing) in its own conda environment with python2.
   - Install Tensorflow with  ```conda create -n tf-gpu tensorflow-gpu==1.13.1```.
   - Install Robot Operating System ([ROS](https://www.ros.org/))
+  - Download and extract pretrained model ```sh ss3d/trained_models/download_model.sh```
 
 # Deployment
   - First we need to detect and segment the mugs in the scene. With mask-rcnn we segment the mugs and after padding them we publish the image via [ROS](https://www.ros.org/).
