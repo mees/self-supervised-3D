@@ -1,0 +1,3 @@
+[submodule "seg_every_thing"]
+	path = seg_every_thing
+	url = git@github.com:mees/seg_every_thing.git
