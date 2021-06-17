@@ -1,3 +1,6 @@
 [submodule "seg_every_thing"]
 	path = seg_every_thing
 	url = git@github.com:mees/seg_every_thing.git
+[submodule "mesh2cloud-ros"]
+	path = mesh2cloud-ros
+	url = https://github.com/mees/mesh2cloud-ros
