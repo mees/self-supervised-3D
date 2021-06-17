@@ -28,7 +28,7 @@ If you find the code helpful please consider citing our work.
 
 # Deployment
   - First we need to detect and segment the mugs in the scene. With mask-rcnn we segment the mugs and after padding them we publish the image via [ROS](https://www.ros.org/).
-    You can then visualize segmentation results in Rviz under the topic ```/segmented_mug_rgb```.
+    You can then visualize segmentation results in Rviz under the topic ```/segmented_mug_rgb```. We also provide a [sample image](ss3d/demo/input_mug.png) to be used as input for the shape prediction network.
    <pre>
     conda activate caffe2_python2
     python tools/infer_simple.py --cfg configs/bbox2mask_vg/eval_sw_R101/runtest_clsbox_2_layer_mlp_nograd_R101.yaml     --output-dir /tmp/detectron-visualizations-vg3k-R101     --image-ext jpg     --thresh 0.1 --use-vg3k     --wts /home/meeso/seg_every_thing/lib/datasets/data/trained_models/33219850_model_final_coco2vg3k_seg.pkl     demo_vg3k
