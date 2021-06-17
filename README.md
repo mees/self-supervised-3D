@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Code for deploying the self-supervised single-image 3D shape model from the paper "Self-supervised 3D Shape and Viewpoint Estimation from Single Images for Robotics" (IROS 2019).
-Concretely, we showcase how to using the hallucinated 3D object shapes improve the performance on the task of grasping real-world objects with a PR2 robot.
+Concretely, we showcase how using the hallucinated 3D object shapes improve the performance on the task of grasping real-world objects with a PR2 robot.
 
 ## Reference
 If you find the code helpful please consider citing our work
@@ -35,3 +35,5 @@ If you find the code helpful please consider citing our work
   conda activate tf-gpu
   python ss3d/imageTo3D.py
   </pre>
+- Convert the numpy voxel grid to a point cloud and transform it to the robot frame
+  ```rosrun mesh2cloud mesh2cloud_node ```
