@@ -4,3 +4,6 @@
 [submodule "mesh2cloud-ros"]
 	path = mesh2cloud-ros
 	url = https://github.com/mees/mesh2cloud-ros
+[submodule "pickAndPlace-PR2"]
+	path = pickAndPlace-PR2
+	url = https://github.com/mees/pickAndPlace-PR2

@@ -3,6 +3,7 @@
 
 Code for deploying the self-supervised single-image 3D shape model from the paper "Self-supervised 3D Shape and Viewpoint Estimation from Single Images for Robotics" (IROS 2019).
 Concretely, we showcase how using the hallucinated 3D object shapes improve the performance on the task of grasping real-world objects with a PR2 robot.
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/oQgHG9JdMP4/0.jpg)](https://www.youtube.com/watch?v=oQgHG9JdMP4 "Video Title")
 
 ## Reference
 If you find the code helpful please consider citing our work
@@ -37,3 +38,5 @@ If you find the code helpful please consider citing our work
   </pre>
 - Convert the numpy voxel grid to a point cloud and transform it to the robot frame
   ```rosrun mesh2cloud mesh2cloud_node ```
+
+- Use your favorite object grasping pipeline on the predicted point cloud, we offer a package based on GPD at https://github.com/mees/pickAndPlace-PR2
