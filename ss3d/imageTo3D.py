@@ -82,7 +82,7 @@ class eval_ss3d:
         )
         return outputs_
 
-    def buildModel(self):
+    def build_model(self):
         self.images = tf.placeholder(tf.float32, [None] + self.input_shape, name="input_images")
         self.bn = False
         f_dim = 64
@@ -126,7 +126,7 @@ class eval_ss3d:
                 self.azimuth_1 = layers.fully_connected(bottleneck, 1, activation_fn=tf.nn.sigmoid) * 2 * m.pi
                 # 3*m.pi/9 #[0,60]#2*m.pi/9 #elev range [0,40] degrees
                 self.elevation_1 = layers.fully_connected(bottleneck, 1, activation_fn=tf.nn.sigmoid) * 2 * m.pi / 9
-                self.quat_pose = utils.eulerToQuat(self.azimuth_1, self.elevation_1)
+                self.quat_pose = utils.euler_2_quat(self.azimuth_1, self.elevation_1)
 
         with tf.variable_scope("decoder"):
             with arg_scope(
@@ -176,7 +176,7 @@ class PredNode:
         self.pub_pose = rospy.Publisher("predicted_pose_np", numpy_msg(Floats), queue_size=1)
         self.sess = sess
         self.net = eval_ss3d(self.sess)
-        self.net.buildModel()
+        self.net.build_model()
         tf.set_random_seed(0)
         tf.logging.set_verbosity(tf.logging.INFO)
         self.saver = tf.train.Saver()
