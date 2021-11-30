@@ -1,7 +1,7 @@
 # Self-supervised 3D Shape and Viewpoint Estimation from Single Images for Robotics
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-Code for deploying the self-supervised single-image 3D shape model from the paper [IROS 2019](https://arxiv.org/pdf/1910.07948.pdf) paper.
+Code for deploying the self-supervised single-image 3D shape model from the [IROS 2019](https://arxiv.org/pdf/1910.07948.pdf) paper.
 Concretely, we showcase how using the hallucinated 3D object shapes improve the performance on the task of grasping real-world objects with a PR2 robot.
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/oQgHG9JdMP4/0.jpg)](https://www.youtube.com/watch?v=oQgHG9JdMP4 "Video Title")
