@@ -1,4 +1,7 @@
 # Self-supervised 3D Shape and Viewpoint Estimation from Single Images for Robotics
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/mees/self-supervised-3D.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mees/self-supervised-3D/context:python)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/mees/self-supervised-3D.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/mees/self-supervised-3D/alerts/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 Code for deploying the self-supervised single-image 3D shape model from the [IROS 2019](https://arxiv.org/pdf/1910.07948.pdf) paper.
