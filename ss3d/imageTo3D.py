@@ -22,11 +22,6 @@ from sensor_msgs.msg import Image
 import tensorflow.contrib.layers as layers
 import utils
 
-try:
-    from StringIO import StringIO
-except ImportError:
-    from io import StringIO
-
 flags = tf.app.flags
 flags.DEFINE_string("dataset", "chair", "Dataset name that is to be used for training and evaluation.")
 flags.DEFINE_string(
@@ -197,7 +192,6 @@ class PredNode:
         print("azi: ", rad2deg(out[1]))
         print("elev: ", rad2deg(out[2]))
         pose = np.array([out[1], out[2]], dtype=np.float32)
-        # np.save("/home/meeso/mugs_pr2/pred.npy", voxels)
         vox = np.rint(voxels)
         voxels_flat = np.transpose(vox, (0, 2, 1)).flatten()
         self.pub_vox.publish(voxels_flat)
@@ -207,7 +201,7 @@ class PredNode:
 def main(args):
     rospy.init_node("tensorflow", anonymous=True)
     with tf.Session() as sess:
-        odn = PredNode(sess)
+        PredNode(sess)
         rospy.loginfo("Pred  node started")
         try:
             rospy.spin()

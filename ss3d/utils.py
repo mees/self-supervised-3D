@@ -1,6 +1,6 @@
 import matplotlib
 import numpy as np
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image
 import StringIO
 import tensorflow as tf
 
