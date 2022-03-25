@@ -9,9 +9,7 @@ import os
 import sys
 
 from binvox_rw import *
-import cv2
-from cv_bridge import CvBridge, CvBridgeError
-import matplotlib.pyplot as plt
+from cv_bridge import CvBridge
 import model_iterator
 import numpy as np
 from PIL import Image
